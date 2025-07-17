@@ -13,7 +13,7 @@ function Layout() {
           <h3>this is my website</h3>
         </header>
         <main>
-          <Outlet/>
+          <Outlet />
         </main>
         <nav>
           <NavLink to="/">home</NavLink>
@@ -24,7 +24,10 @@ function Layout() {
       </div>
       <div className="half-page page-left">
         <div className="face-wrapper">
-          <div className="face" aria-label="ascii art of a smiling face, with two eyes and a mouth. the eyes blink every so often">
+          <div
+            className="face"
+            aria-label="ascii art of a smiling face, with two eyes and a mouth. the eyes blink every so often"
+          >
             <div className="eyes">
               <div className="eye"></div>
               <div className="eye"></div>

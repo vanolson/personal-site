@@ -24,6 +24,7 @@
   }
 
   nav {
+    padding-top: 30px;
     margin-top: auto; // Put at bottom (container must be flex)
 
     a {
@@ -31,6 +32,10 @@
       font-size: 140%;
       color: var(--text-color-secondary);
       text-decoration: none;
+    }
+
+    a:hover {
+      color: var(--text-color-primary);
     }
 
     .active {
@@ -115,6 +120,10 @@
 
     header {
       padding-bottom: 20px;
+    }
+
+    main {
+      overflow: scroll;
     }
 
     .title > a {
