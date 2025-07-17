@@ -1,0 +1,10 @@
+@use '../colors/primitive';
+
+:root {
+  color-scheme: light dark;
+
+  /* Theme colors */
+  --background-color: light-dark(var(--color-white), var(--color-black));
+  --text-color-primary: light-dark(var(--color-black), var(var(--color-white)));
+  --text-color-secondary: light-dark(var(--color-dark-gray), var(--color-light-gray));
+}

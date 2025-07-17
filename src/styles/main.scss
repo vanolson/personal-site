@@ -1,0 +1,20 @@
+@use 'theme/default';
+@import 'https://fonts.googleapis.com/css?family=Geist+Mono';
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color-primary);
+  font-size: 100%;
+  font-family: 'Geist Mono', monospace, 'Courier New', Courier;
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+
+  .root {
+    height: 100%;
+  }
+}

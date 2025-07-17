@@ -1,54 +1,13 @@
-<!DOCTYPE html>
-<html lang="en-US">
+<!doctype html>
+<html lang="en">
   <head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Geist+Mono"/>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1"/>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1" />
     <title>vanolson.com</title>
-    <link rel="stylesheet" href="/style.css"/>
   </head>
   <body>
-    <canvas class="mouse-canvas"></canvas>
-    <div class="wrapper">
-      <div class="half-page page-right">
-        <header>
-          <h1 class="title">
-            <a href="">vanolson.com</a>
-          </h1>
-          <h3>this is my website</h3>
-        </header>
-        <section>
-          <p>hi, i'm van!</p>
-          <p>i'm a software dev, musician, and transit enthusiast.</p>
-          <p>
-            by day, i work as a developer at aws. when i'm not doing that, i like going to baseball
-            games, speedrunning metro systems, and playing bass guitar.
-          </p>
-          <p>
-            i'm also a judge for the university of chicago scavenger hunt and i help develop its site.
-          </p>
-          <!-- <p>
-            extra extra <br> extra <br> extra <br> extra <br> extra <br>extra <br>extra <br>extra <br>extra <br>
-          </p> -->
-        </section>
-        <footer></footer>
-      </div>
-      <div class="half-page page-left">
-        <div class="face-wrapper">
-          <div class="face" alt="ascii art of a smiling face, with two eyes and a mouth. the eyes blink every so often">
-            <div class="eyes">
-              <div class="eye"></div>
-              <div class="eye"></div>
-            </div>
-            <div class="mouth"></div>
-          </div>
-          <div class="face-label">
-            <h5>here is a rough approximation of what i look like</h5>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div class="root" id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
-  <script src="/mouse.js"></script>
-  <!-- <script>loop()</script> -->
 </html>
