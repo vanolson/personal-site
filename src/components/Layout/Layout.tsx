@@ -4,11 +4,11 @@ import './Layout.scss';
 function Layout() {
   return (
     <div className="layout">
-      <canvas className="mouse-canvas"></canvas>
+      {/* <canvas className="mouse-canvas"></canvas> */}
       <div className="half-page page-right">
         <header>
           <h1 className="title">
-            <a href="">vanolson.com</a>
+            <a href="/">vanolson.com</a>
           </h1>
           <h3>this is my website</h3>
         </header>
