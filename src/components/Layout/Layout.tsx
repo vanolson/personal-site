@@ -1,10 +1,11 @@
-import { NavLink, Outlet } from 'react-router-dom';
 import './Layout.scss';
+import { NavLink, Outlet } from 'react-router';
+import { FaLinkedin, FaGithub } from 'react-icons/fa6';
 
 function Layout() {
   return (
     <div className="layout">
-      {/* <canvas className="mouse-canvas"></canvas> */}
+      {/* <canvas className='mouse-canvas'></canvas> */}
       <div className="half-page page-right">
         <header>
           <h1 className="title">
@@ -15,12 +16,33 @@ function Layout() {
         <main>
           <Outlet />
         </main>
-        <nav>
-          <NavLink to="/">home</NavLink>
-          <NavLink to="/about">about</NavLink>
-          <NavLink to="/stuff">stuff</NavLink>
-        </nav>
-        <footer></footer>
+        <div className="nav-and-footer">
+          <nav>
+            <NavLink to="/">home</NavLink>
+            <NavLink to="/about">about</NavLink>
+            <NavLink to="/fun">fun</NavLink>
+          </nav>
+          <footer>
+            <div className="socials">
+              <a
+                className="social-link"
+                href="https://linkedin.com"
+                rel="noreferrer noopener"
+                target="_blank"
+              >
+                <FaLinkedin className="social-icon" />
+              </a>
+              <a
+                className="social-link"
+                href="https://github.com"
+                rel="noreferrer noopener"
+                target="_blank"
+              >
+                <FaGithub className="social-icon" />
+              </a>
+            </div>
+          </footer>
+        </div>
       </div>
       <div className="half-page page-left">
         <div className="face-wrapper">
