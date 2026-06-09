@@ -1,8 +1,11 @@
 .layout {
   padding: 50px;
-  display: flex;
   gap: 50px;
   height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-sizing: border-box;
 
   h1,
@@ -12,6 +15,7 @@
 
   h1 {
     font-size: 60px;
+    // text-align: center;
     margin: 0;
   }
 
@@ -22,189 +26,7 @@
     color: var(--text-color-secondary);
     font-weight: normal;
   }
-
-  nav {
-    a {
-      margin-left: 20px;
-      color: var(--text-color-secondary);
-      text-decoration: none;
-    }
-
-    a:hover {
-      color: var(--text-color-primary);
-    }
-
-    .active {
-      color: var(--text-color-primary);
-      text-decoration: underline;
-    }
-  }
-
-  nav,
-  footer {
-    font-size: 140%;
-  }
-
-  .mouse-canvas {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100vh;
-    width: 100vw;
-    /* background: #EEAECA;
-    background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%); */
-    opacity: 0;
-    pointer-events: none;
-  }
-
-  .half-page {
-    width: 100%;
-  }
-
-  .page-left {
-    order: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* height: calc(100vh - 2 * var(--body-padding)); */
-    height: 100%;
-
-    .face {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      /* justify-content: center; */
-      font-size: 60px;
-      font-weight: bolder;
-      gap: 30px;
-    }
-
-    .eyes {
-      display: flex;
-      flex-direction: row;
-      gap: 100px;
-    }
-
-    .mouth {
-      height: 85px;
-    }
-
-    .eye::after {
-      content: '●';
-      animation: blink 10s infinite ease-in;
-    }
-
-    .eyes:hover {
-      .eye::after {
-        content: '◡';
-      }
-    }
-
-    .mouth::after {
-      content: '︶';
-    }
-
-    .mouth:hover::after {
-      content: 'º';
-    }
-
-    .face-label h5 {
-      text-align: center;
-    }
-  }
-
-  .page-right {
-    order: 2;
-    text-align: right;
-    display: flex;
-    flex-direction: column;
-
-    header {
-      padding-bottom: 20px;
-    }
-
-    main {
-      overflow: scroll;
-      /* Center within available space */
-      margin-top: auto;
-      margin-bottom: auto;
-    }
-
-    .nav-and-footer {
-      display: flex;
-      flex-direction: row-reverse;
-      padding-top: 30px;
-      margin-top: auto; // Put at bottom (container must be flex)
-      gap: 40px;
-    }
-
-    .title a {
-      color: inherit;
-      text-decoration: inherit;
-    }
-
-    p {
-      margin-bottom: 40px;
-      font-size: 120%;
-    }
-
-    .socials {
-      display: inline-flex;
-      align-self: center;
-      gap: 20px;
-    }
-
-    .social-link {
-      color: var(--text-color-secondary);
-    }
-
-    .social-link:hover {
-      color: var(--text-color-primary);
-    }
-
-    .social-icon {
-      width: 100%;
-      height: 100%;
-    }
-  }
-}
-
-@keyframes blink {
-  0% {
-    content: '◡';
-  }
-  1% {
-    content: '●';
-  }
-  /* 45% {
-    content: '◡';
-  }
-  46% {
-    content: '●';
-  } */
-  /* 71% {
-    content: '◡';
-  }
-  71.5% {
-    content: '●';
-  } */
 }
 
 @media print, screen and (max-width: 810px) {
-  .layout {
-    flex-direction: column;
-    gap: 5px;
-
-    .page-left {
-      order: 2;
-      height: auto;
-      .face-wrapper {
-        position: relative;
-      }
-    }
-
-    .page-right {
-      order: 1;
-    }
-  }
 }
