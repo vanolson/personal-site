@@ -5,7 +5,7 @@ function ReactRoute() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />}></Route>
+        <Route path="/personal-site" element={<Layout />}></Route>
       </Routes>
     </BrowserRouter>
   );
