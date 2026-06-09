@@ -1,1 +1,1 @@
-this is my personal website. now using react!
+this is my website
